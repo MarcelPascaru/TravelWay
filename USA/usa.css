@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Redressed&family=Titillium+Web:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web',sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+html::-webkit-scrollbar{
+    width: .5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: white;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+}
+
+/* header=====================  */
+header{
+    padding: 10px 0;
+    background: black;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item{
+    margin-left: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.nav-item:hover{
+    color: #000;
+    transition: 1s;
+    background: #fff;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-text{
+    font-weight: 800;
+    font-size: 26px;
+    color: #fff;
+}
+
+.logo-photo{
+    width: 24px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* intro======================= */
+.intro{
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../Media/USA/introbgusa-min.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.intro-title{
+    font-size: 90px;
+    color: #fff;
+    font-family: 'Redressed',sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:  200px 0;
+}
+
+/* info======================= */
+.info-content{
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.info-photo{
+    width: 400px;
+    height: 300px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.description{
+    display: block;
+    width: 100%;
+    margin-left: 25px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.info-title{
+    font-size: 40px;
+}
+
+/* table================== ==== */
+table{
+    border: 1px solid black;
+    margin-right: 20px;
+}
+
+th{
+    text-align: center;
+}
+
+tr{
+    border: 1px solid black;
+}
+
+td{
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.table-content{
+    display: flex;
+   
+    justify-content: space-between;
+}
+
+/* flag============================  */
+.flag-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.flag-photo{
+    width: 380px;
+    height: 250px;
+}
+
+.traditions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.about-title{
+    font-size: 22px;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.tradition-img{
+    margin-right: 20px;
+}
+
+.tradition-photo{
+    border-radius: 25px;
+}
+
+.national-food{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.food-img{
+    margin-left: 20px;
+}
+
+.food-photo{
+    border-radius: 25px;
+}
+
+.art{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.art-img{
+    margin-right: 20px;
+}
+
+.art-photo{
+    border-radius: 25px;
+}
+
+.slide-title{
+    font-size: 70px;
+    width: 600px;
+    color: #fff;
+}
+
+.slide-description{
+    position: absolute;
+    z-index: 999;
+    top: 10%;
+    left: 50px;
+    padding: 15px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    border-radius: 20px;
+    margin: 0  20px;
+}
+
+.slide-photo{
+    border-radius: 25px;
+    margin: 20px 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.section-title{
+    font-size: 35px;
+    text-align: center;
+}
+
+.slide-text{
+    color: #fff;
+    font-size: 18px;
+    width: 600px;
+}
+
+/* swiper=============================================================================== */
+.swiper-title{
+    text-align: center;
+    font-size: 30px;
+}
+
+.image-slider__image{
+    padding: 15px 0;
+    margin: 0 45px;
+}
+
+.image-slider__image img{
+    max-width: 100%;
+    height: 95vh;
+}
+
+.block{
+    display: flex;
+}
+
+.image-slider .swiper-button-next::after,
+.image-slider .swiper-button-prev::after{
+    color: #000;
+    font-size: 45px;
+}
+
+.image-slider .swiper-pagination-bullet{
+    width: 15px;
+    margin: 5px 0;
+    height: 15px;
+    line-height: 20px;
+    font-size: 12px;
+    background-color: #000;
+}

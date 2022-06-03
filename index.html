@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./Media/Other/plane4-min.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="validation.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Redressed&family=Titillium+Web:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>TravelWay</title>
+</head>
+
+<body>
+
+    <!-- header section begin -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="Media/Other/plane4-min.png" alt="" class="logo-photo">
+                    <span class="logo-text">TravelWay.</span>
+                </div>
+                <div class="nav-bar">
+                    <a href="#" class="nav-item">home</a>
+                    <a href="#about" class="nav-item">about</a>
+                    <a href="#services" class="nav-item">services</a>
+                    <a href="#blog" class="nav-item">blog</a>
+                    <a href="#contact" class="nav-item">contact</a>
+                </div>
+                <div class="log">
+                    <a href="./Login/login.html" class="log-btn">Log In</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <main>
+
+        <!-- intro section begin  -->
+        <section class="intro">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-description">
+                        <h3 class="intro-title">Let's fly in any corner of the world</h3>
+                        <p class="intro-quote">
+                            “Travel isn’t always pretty. It isn’t always comfortable. Sometimes it hurts, it even breaks
+                            your heart. But that’s okay. The journey changes you; it should change you. It leaves marks
+                            on your memory, on your consciousness, on your heart, and on your body. You take something
+                            with you. Hopefully, you leave something good behind.”
+                        </p>
+                        <a href="#discovery" class="btn">Discovery More</a>
+                        <div class="social-icons">
+                            <div class="icons-item">
+                                <a href="#"><i class="fab fa-facebook-f" id="icons-links"></i></a>
+                            </div>
+                            <div class="icons-item">
+                                <a href="#"><i class="fab fa-instagram" id="icons-links"></i></a>
+                            </div>
+                            <div class="icons-item">
+                                <a href="#"><i class="fab fa-twitter" id="icons-links"></i></a>
+                            </div>
+                            <div class="icons-item">
+                                <a href="#"><i class="fab fa-pinterest-p" id="icons-links"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- intro section end -->
+
+        <!-- image-content section begin  -->
+        <div class="slide-container" id="discovery">
+
+            <div class="wrapper">
+
+                <h1 class="swiper-title">Choose your perfect country</h1>
+
+                <div class="image-slider swiper">
+
+                    <div class="image-slider__wrapper swiper-wrapper">
+
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-item">
+                                <div class=" image">
+                                    <a href="./Switzerland/switzerland.html">
+                                        <img src="Media/Switzerland/Switzerland-min.jpg" alt="" class="photo">
+                                    </a>
+                                </div>
+                                <div class="image-title">Switzerland</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image-item">
+                                <div class="image">
+                                    <a href="./USA/usa.html">
+                                        <img src="Media/USA/USA-min.jpg" alt="" class="photo">
+                                    </a>
+                                </div>
+                                <div class="image-title">The United States of America</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image-item">
+                                <div class="image">
+                                    <a href="./austria/austria.html">
+                                        <img src="Media/Austria/Austria-min.jpg" alt="" class="photo">
+                                    </a>
+                                </div>
+                                <div class="image-title">Austria</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image-item">
+                                <div class="image">
+                                    <a href="./Netherlands/netherlands.html">
+                                        <img src="Media/Netherlands/Netherlands-min.jpg" alt="" class="photo">
+                                    </a>
+                                </div>
+                                <div class="image-title">Netherlands</div>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-item">
+                                <div class=" image">
+                                    <a href="./Norway/norway.html">
+                                        <img src="Media/Norway/Norway-min.jpg" alt="" class="photo">
+                                    </a>
+                                </div>
+                                <div class="image-title">Norway</div>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-item">
+                                <div class=" image">
+                                    <a href="./Spain/spain.html">
+                                        <img src="Media/Spain/Spain-min.jpg" alt="" class="photo">
+                                    </a>
+                                </div>
+                                <div class="image-title">Spain</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                slidesPerView: 3,
+
+                // simulateTouch:true,
+                // touchRatio:1,
+                // touchAngle:45,
+                // grabCursor:true,
+
+            });
+        </script>
+
+        <!-- image-content section end -->
+
+        <!-- quote section begin  -->
+        <section class="quote">
+            <div class="container">
+                <div class="quote-content">
+                    <div class="quotes">
+                        “The world is a book and those who do not travel read only one page.”
+                    </div>
+                    <span class="author">Saint Augustine</span>
+                </div>
+            </div>
+        </section>
+        <!-- quote section end  -->
+
+        <!-- about section begin  -->
+        <section class="about" id="about">
+            <div class="container">
+                <h3 class="about-title">About Us</h3>
+                <div class="about-content">
+                    <div class="about-mini-section1">
+                        <div class="about-image-box">
+                            <img src="Media/Other/aboutimg-min.jpg" alt="" class="about-photo">
+                        </div>
+                        <div class="about-text-box">
+                            <h4 class="about-text-title">Company Mission</h4>
+                            <p class="about-text">
+                                Travelshoppe is committed to providing our clients with exceptional service a complete
+                                end to end booking solution covering all aspects of your travel needs tailored in house
+                                at
+                                an affordable prize with pro-active customer service.
+                            </p>
+                            <p class="about-text">
+                            <h4 class="about-text-title">Company Vision</h4>
+                            To be leaders of multi-national travel management in the region and our clients' best
+                            partner, always providing the best possible product, with the highest quality of services,
+                            and
+                            demonstrating faithfully our commitment towards social and environmental responsibility.
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr class="about-line">
+
+                    <div class="about-mini-section2">
+                        <div class="about-text-box">
+                            <div class="page-buttons">
+                                <a href="" class="page-btn">Page 1</a>
+                                <a href="" class="page-btn">Page 2</a>
+                                <a href="" class="page-btn">Page 3</a>
+                            </div>
+                            <h4 class="about-text-title">Introduction</h4>
+                            <p class="about-text">
+                                For 20 years TravelWay has been providing an unrivalled full spectrum of business and
+                                leisure travel services that our satisfied customers will certainly attest to. We pride
+                                ourselves
+                                in offering world class service in the regions we operate. Our well experienced
+                                consultants
+                                offer clients with most economical, practical and convenient travel solutions.
+                                TravelWay was incorporated on 11th May 1994 and has received numerous awards and
+                                recognitions since date. We have established a reputation in the industry for having
+                                strong
+                                and long lasting relationships with both our suppliers and clients.
+                                TravelWay Company Ltd has received notable recognition during this year’s
+                                KPMG Top 100 Mid-sized Company Awards for 2010/2011, 2011/2012 and
+                                2012/2013.
+                                We have spread our distribution network through the opening of the
+                                TravelWay Nanyuki branch; the first in town in 2010 and Machakos branch in 2015.
+                            </p>
+                            <h4 class="about-text-title">Global presence</h4>
+                            <p class="about-text">
+                                TravelWay is a member of GlobalStar Travel Management; we are the only appointed
+                                member in Kenya.
+                                GlobalStar is a worldwide travel management company owned and managed internationally
+                                by local entrepreneurs. More than 80 market leading enterprises across the globe,
+                                representing over $13 Billion in combined sales, deliver cohesive multinational
+                                solutions. And
+                                this is growing: We continually work at expanding and improving the quality of the
+                                partners in
+                                the network.
+                            </p>
+                        </div>
+                        <div class="skills-box">
+                            <h3 class="skills-title">Companies Skills</h3>
+                            <ul class="skills-list">
+                                <li class="skills">
+                                    <div class="skills-progress financial"></div>
+                                    <strong>Financial management-85%</strong>
+                                </li>
+                                <li class="skills">
+                                    <div class="skills-progress marketing"></div>
+                                    <strong>Marketing,sales and customer service-55%</strong>
+                                </li>
+                                <li class="skills">
+                                    <div class="skills-progress communication"></div>
+                                    <strong>Communication and negotiation-65%</strong>
+                                </li>
+                                <li class="skills">
+                                    <div class="skills-progress leadership"></div>
+                                    <strong>Leadership-80%</strong>
+                                </li>
+                                <li class="skills">
+                                    <div class="skills-progress project"></div>
+                                    <strong>Project management and planning-95%</strong>
+                                </li>
+                                <li class="skills">
+                                    <div class="skills-progress delegation"></div>
+                                    <strong>Delegation and time management-60%</strong>
+                                </li>
+                                <li class="skills">
+                                    <div class="skills-progress problem"></div>
+                                    <strong>Problem solving-45%</strong>
+                                </li>
+                                <li class="skills">
+                                    <div class="skills-progress networking"></div>
+                                    <strong>Networking-80%</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section end -->
+
+        <hr class="block-line">
+
+        <!-- services section begin -->
+        <section class="services" id="services">
+            <div class="container">
+                <h3 class="services-title">Our Services</h3>
+                <div class="services-content">
+                    <div class="services-item">
+                        <div class="services-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <div class="services-name">Hotel</div>
+                        <p class="services-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, at!
+                        </p>
+
+                        <div class="popup" id="popup-1">
+                            <div class="overlay"></div>
+                            <div class="popup-content">
+                                <div class="close-btn" onclick="togglePopup('popup-1')">&times;</div>
+                                <h1 class="popup-title">Hotel</h1>
+                                <div class="contains">
+                                    <div class="popup-img">
+                                        <img src="Media/Other/hotelimg-min.jpg" alt="" class="popup-photo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="read-btn" onclick="togglePopup('popup-1')">Read More</button>
+
+
+                    </div>
+
+                    <div class="services-item">
+                        <div class="services-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <div class="services-name">Restaurant</div>
+                        <p class="services-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, at!
+                        </p>
+
+                        <div class="popup" id="popup-2">
+                            <div class="overlay"></div>
+                            <div class="popup-content">
+                                <div class="close-btn" onclick="togglePopup('popup-2')">&times;</div>
+                                <h1 class="popup-title">Restaurant</h1>
+                                <div class="contains">
+                                    <div class="popup-img">
+                                        <img src="Media/Other/restaurantimig-min.jpg" alt="" class="popup-photo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="read-btn" onclick="togglePopup('popup-2')">Read More</button>
+
+
+                    </div>
+
+                    <div class="services-item">
+                        <div class="services-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <div class="services-name">Trips</div>
+                        <p class="services-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, at!
+                        </p>
+
+                        <div class="popup" id="popup-3">
+                            <div class="overlay"></div>
+                            <div class="popup-content">
+                                <div class="close-btn" onclick="togglePopup('popup-3')">&times;</div>
+                                <h1 class="popup-title">Trips</h1>
+                                <div class="contains">
+                                    <div class="popup-img">
+                                        <img src="Media/Other/tripsimg-min.jpg" alt="" class="popup-photo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="read-btn" onclick="togglePopup('popup-3')">Read More</button>
+
+
+                    </div>
+
+                    <div class="services-item">
+                        <div class="services-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <div class="services-name">Rent Car</div>
+                        <p class="services-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, at!
+                        </p>
+
+                        <div class="popup" id="popup-4">
+                            <div class="overlay"></div>
+                            <div class="popup-content">
+                                <div class="close-btn" onclick="togglePopup('popup-4')">&times;</div>
+                                <h1 class="popup-title">Rent Car</h1>
+                                <div class="contains">
+                                    <div class="popup-img">
+                                        <img src="Media/Other/rentcarsimg-min.jpg" alt="" class="popup-photo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="read-btn" onclick="togglePopup('popup-4')">Read More</button>
+
+
+                    </div>
+
+                    <div class="services-item">
+                        <div class="services-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <div class="services-name">Medical Insurance</div>
+                        <p class="services-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, at!
+                        </p>
+
+                        <div class="popup" id="popup-5">
+                            <div class="overlay"></div>
+                            <div class="popup-content">
+                                <div class="close-btn" onclick="togglePopup('popup-5')">&times;</div>
+                                <h1 class="popup-title">Medical Insurance</h1>
+                                <div class="contains">
+                                    <div class="popup-img">
+                                        <img src="Media/Other/medicalimg-min.jpg" alt="" class="popup-photo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="read-btn" onclick="togglePopup('popup-5')">Read More</button>
+
+
+                    </div>
+
+                    <div class="services-item">
+                        <div class="services-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <div class="services-name">Sports</div>
+                        <p class="services-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, at!
+                        </p>
+
+                        <div class="popup" id="popup-6">
+                            <div class="overlay"></div>
+                            <div class="popup-content">
+                                <div class="close-btn" onclick="togglePopup('popup-6')">&times;</div>
+                                <h1 class="popup-title">Sports</h1>
+                                <div class="contains">
+                                    <div class="popup-img">
+                                        <img src="Media/Other/sportsimg-min.jpg" alt="" class="popup-photo">
+                                    </div>
+                                    <div class="popup-text">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea qui consequatur
+                                            libero, dicta porro architecto alias, adipisci amet dolores labore quia.
+                                            Animi quas voluptas reiciendis quidem ab cumque similique incidunt!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="read-btn" onclick="togglePopup('popup-6')">Read More</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services section end -->
+
+        <!-- clients section begin -->
+        <section class="clients">
+            <h3 class="clients-title">Our Clients</h3>
+            <div class="container">
+                <div class="clients-content">
+                    <div class="clients-item">
+                        <div class="clients-img">
+                            <img src="Media/Other/ClientLogo01-min.png" alt="" class="clients-photo">
+                        </div>
+                    </div>
+                    <div class="clients-item">
+                        <div class="clients-img">
+                            <img src="Media/Other/ClientLogo02-min.png" alt="" class="clients-photo">
+                        </div>
+                    </div>
+                    <div class="clients-item">
+                        <div class="clients-img">
+                            <img src="Media/Other/ClientLogo03-min.png" alt="" class="clients-photo">
+                        </div>
+                    </div>
+                    <div class="clients-item">
+                        <div class="clients-img">
+                            <img src="Media/Other/ClientLogo04-min.png" alt="" class="clients-photo">
+                        </div>
+                    </div>
+                    <div class="clients-item">
+                        <div class="clients-img">
+                            <img src="Media/Other/ClientLogo05-min.png" alt="" class="clients-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- clients section end  -->
+
+        <!-- contact section begin -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-content">
+                  <form id="formId" action="send.php" method="post">
+                    <div class="contact-box">
+                        <h3 class="contact-title">Contact Us</h3>
+                        <div class="inputBox">
+                            <input id="nameId" type="text" name="name" placeholder="Name" onblur="validate('nameId', this.value)">
+                            <input id="emailId" type="email" name="email" placeholder="Email" onblur="validate('emailId', this.value)">
+                        </div>
+                        <div class="inputBox">
+                            <input type="number" name="number" placeholder="Number">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <div id="validationMessage"></div>
+                        <div class="button">
+                            <input onclick="checkForm()" type="button" value="Send Message" class="contact-btn">
+                        </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </section>
+        <!-- contact section end -->
+
+        <!-- footer section begin  -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="social-info">
+                        <h5 class="social-text">
+                            <i class="fas fa-phone"></i>
+                            <span class="numbers">+373 794 523 34</span>
+                        </h5>
+                        <h5 class="social-text">
+                            <i class="fas fa-envelope"></i>
+                            <span class="numbers">travelway95@gmail.com</span>
+                        </h5>
+                        <h5 class="social-text">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="numbers">str.Decebal 111</span>
+                        </h5>
+                    </div>
+                    <h3 class="thanx">Thank you for choosing us.</h3>
+                    <div class="social-links">
+                        <div class="social-item">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="social-item">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="social-item">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="social-item">
+                            <i class="fab fa-pinterest-p"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section end -->
+    </main>
+
+    <button onclick="topFunction()" id="myBtn">Back</button>
+
+    <!-- custom form validation -->
+    <script src="./validation.js"></script>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script>
+        function togglePopup(popupId) {
+            document.getElementById(popupId).classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>

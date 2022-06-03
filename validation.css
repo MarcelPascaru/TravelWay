@@ -1,0 +1,22 @@
+input:focus-visible {
+    border: none;
+}
+
+textarea,
+input {
+     border: 2px solid black;
+}
+
+textarea {
+    width: calc(100% - 40px);
+}
+
+
+.inputBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#validationMessage {
+    color: red;
+}
